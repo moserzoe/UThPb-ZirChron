@@ -84,7 +84,7 @@ pip install numpy pandas scipy matplotlib tqdm jupyter openpyxl
 
 2. **Run the interactive notebook**: 
 ```bash
-jupyter notebook "Bayesian eruption estimate/Bayesian_input_file.ipynb"
+jupyter notebook "Bayesian eruption estimate/bayesian_input_file.ipynb"
 ```
 
 3. **Or use the Python script**:

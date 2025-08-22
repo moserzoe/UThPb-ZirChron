@@ -36,7 +36,7 @@ for variable_name in unique_units:
     #"Bootstrapped",
     "UniformDistribution"]
     for i in PriorDist:
-        calculate_bayesian_age(data_zrc,unit_of_interest=variable_name, n_chain=15000, dist= i, model_age=col_model_age, mean_sigma = col_model_age_1sigma, do_plot=False)
+        calculate_bayesian_age(data_zrc,unit_of_interest=variable_name, n_chain=15000, dist= i, model_age=col_model_age, mean_sigma = col_model_age_1sigma, do_plot=True)
         print(f'Bayesian age calculation for {variable_name} with {i} completed.')
 output_file = f'{directory_data}{name_data_file}_bayesian_results.xlsx'
 data_zrc.to_excel(output_file, index=False)
