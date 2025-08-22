@@ -129,8 +129,10 @@ If you use this code in your research, please cite:
 **Email**: moserz@erdw.ethz.ch
 
 ## References
-Guillong, M., Sliwinski, J. T., Schmitt, A., Forni, F., & Bachmann, O. (2016). U‐Th zircon dating by laser ablation single collector inductively coupled plasma‐mass spectrometry (LA‐ICP‐MS). Geostandards and Geoanalytical Research, 40(3), 377-387.\\
-Keller, C. B., Schoene, B., & Samperton, K. M. (2018). A stochastic sampling approach to zircon eruption age interpretation. Geochemical Perspectives Letters (Online), 8(LLNL-JRNL-738859).
+
+- Guillong, M., Sliwinski, J. T., Schmitt, A., Forni, F., & Bachmann, O. (2016). U‐Th zircon dating by laser ablation single collector inductively coupled plasma‐mass spectrometry (LA‐ICP‐MS). Geostandards and Geoanalytical Research, 40(3), 377-387.
+
+- Keller, C. B., Schoene, B., & Samperton, K. M. (2018). A stochastic sampling approach to zircon eruption age interpretation. Geochemical Perspectives Letters (Online), 8(LLNL-JRNL-738859).
 
 ## Acknowledgments
 
