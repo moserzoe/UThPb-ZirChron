@@ -1,6 +1,6 @@
 # UThPb-ZirChron
 
-A toolkit for U-Th(-Pb) zircon geochronology analysis, including Bayesian eruption age estimation, data reduction schemes for LA-ICP-MS data to be implemented in iolite, and a code for synthetic data generation.
+A toolkit for U-Th(-Pb) zircon geochronology analysis, including Bayesian eruption age estimation, iolite data reduction schemes for LA-ICP-MS data, and synthetic U-Th data generation code.
 
 ## Overview
 
@@ -8,7 +8,7 @@ This repository contains Python tools and workflows for processing and analyzing
 
 - **Bayesian Eruption Age Estimation**: Statistical methods for determining eruption ages from zircon age datasets including uncertainties
 - **Iolite Data Reduction Schemes**: Custom data reduction schemes for the iolite software
-- **Synthetic Data Generation**: Tool for creating synthetic zircon age datasets for testing and validation
+- **Synthetic Data Generation**: Tool for creating synthetic U-Th zircon age datasets for testing and validation
 
 ## Repository Structure
 
@@ -31,19 +31,19 @@ This repository contains Python tools and workflows for processing and analyzing
 ## Features
 
 ### Bayesian Eruption Estimate
-- **MCMC Simulation**: Markov Chain Monte Carlo methods for eruption age estimation
-- **Uncertainty Quantification**: Comprehensive error propagation and uncertainty analysis
-- **Visualization Tools**: Plotting functions for results interpretation
+- **MCMC Simulation**: Markov Chain Monte Carlo methods for eruption age estimation.
+- **Uncertainty Quantification**: Comprehensive error propagation and uncertainty analysis.
+- **Visualization Tools**: Plotting functions for results interpretation.
 
 ### Iolite Integration
-- **Custom Data Reduction Schemes**: Specialized workflows for young zircon U-Pb dating
-- **U-Th Dating Support**: Dedicated reduction scheme for U-Th geochronology
-- **Quality Control Tools**: Automated label filling to avoid empty label names
+- **Custom Data Reduction Schemes**: Specialized workflows for young zircon U-Pb dating.
+- **U-Th Dating Support**: Dedicated reduction scheme for U-Th geochronology.
+- **Quality Control Tools**: Automated label filling to avoid empty label names.
 
 ### Synthetic Data Generation
-- **Flexible Distribution Modeling**: Generate synthetic zircon ages from various statistical distributions
-- **Realistic Uncertainty Simulation**: Apply realistic analytical uncertainties to synthetic data
-- **Visualization**: Displays the synthetic data und uncertainties transparently
+- **Flexible Distribution Modeling**: Generate synthetic zircon ages from various statistical distributions.
+- **Realistic Uncertainty Simulation**: Apply realistic analytical uncertainties to synthetic data.
+- **Visualization**: Displays the synthetic data und uncertainties transparently.
 
 ## Requirements
 
@@ -55,13 +55,12 @@ scipy
 matplotlib
 tqdm
 jupyter
-openpyxl  # for Excel file handling
+openpyxl 
 ```
 
 ### Software Requirements
 - **Python 3.7+**
 - **Iolite 4** (for data reduction schemes)
-- **Jupyter Notebook** (for interactive workflows)
 
 ## Installation
 
@@ -113,7 +112,25 @@ jupyter notebook "Synthetic Data/generating_synthetic_data.ipynb"
 
 ## Contributing
 
-Contributions are welcome! If something is not working for you, send me a mail and I can look into it.
+We welcome contributions to improve and expand the UThPb-ZirChron toolkit. Whether you're reporting bugs, suggesting enhancements, or contributing code, your input is valuable to the scientific community.
+
+### How to Contribute
+
+1. **Reporting Issues**: If you encounter bugs or have suggestions for improvements, please open an issue on the GitHub repository with a detailed description.
+
+2. **Feature Requests**: For new features or major changes, please open an issue first to discuss the proposed changes.
+
+3. **Code Contributions**: 
+   - Fork the repository
+   - Create a feature branch
+   - Make your changes with appropriate documentation
+   - Submit a pull request with a clear description of your changes
+
+4. **Documentation**: Improvements to documentation, examples, or tutorials are always appreciated.
+
+### Support
+
+For technical support or questions about the methodology, please contact the authors via email. We aim to respond to inquiries in a timely manner.
 
 ## Citation
 
