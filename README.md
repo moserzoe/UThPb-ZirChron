@@ -6,9 +6,9 @@ A toolkit for U-Th(-Pb) zircon geochronology analysis, including Bayesian erupti
 
 This repository contains Python tools and workflows for processing and analyzing U-Th(-Pb) zircon geochronological data. The project focuses on:
 
-- **Bayesian Eruption Age Estimation**: Statistical methods for determining eruption ages from zircon age datasets including uncertainties
-- **Iolite Data Reduction Schemes**: Custom data reduction schemes for the iolite software
-- **Synthetic Data Generation**: Tool for creating synthetic U-Th zircon age datasets for testing and validation
+- **Bayesian Eruption Age Estimation**: Statistical methods for determining eruption ages from zircon age datasets including uncertainties.
+- **Iolite Data Reduction Schemes**: Custom data reduction schemes for the iolite software.
+- **Synthetic Data Generation**: Tool for creating synthetic U-Th zircon age datasets for testing and validation.
 
 ## Repository Structure
 
@@ -80,7 +80,7 @@ pip install numpy pandas scipy matplotlib tqdm jupyter openpyxl
 
 ### Bayesian Eruption Age Analysis
 
-1. **Prepare your data**: Ensure your zircon age data is in the correct format: see `example_data.xlsx` (needed columns: Unit, model_age, model_age_1sigma)
+1. **Prepare your data**: Ensure your zircon age data is in the correct format: see `example_data.xlsx` (needed columns: Unit, model_age, model_age_1sigma).
 
 2. **Run the interactive notebook**: 
 ```bash
@@ -99,9 +99,9 @@ Example files include
 
 ### Iolite Data Reduction
 
-1. Copy the desired `.py` and `.pyc` files from the `iolite DRS/` folder to your iolite directory: `iolite/Plugins/Data reduction schemes/`
-2. Open iolite, data reduction schemes should appear in the DRS list
-3. Process your LA-ICP-MS data according to the scheme parameters (additional information can be found in the supplementary file)
+1. Copy the desired `.py` and `.pyc` files from the `iolite DRS/` folder to your iolite directory: `iolite/Plugins/Data reduction schemes/`.
+2. Open iolite, data reduction schemes should appear in the DRS list.
+3. Process your LA-ICP-MS data according to the scheme parameters (additional information can be found in the supplementary file).
 
 The 'U-Th reduction' data reduction scheme can not only be used for zircon, but also for groundmass glass, ilmenite, garnet, and other mineral phases.
 
@@ -129,7 +129,7 @@ If you use this code in your research, please cite:
 **Email**: moserz@erdw.ethz.ch
 
 ## References
-Guillong, M., Sliwinski, J. T., Schmitt, A., Forni, F., & Bachmann, O. (2016). U‐Th zircon dating by laser ablation single collector inductively coupled plasma‐mass spectrometry (LA‐ICP‐MS). Geostandards and Geoanalytical Research, 40(3), 377-387.
+Guillong, M., Sliwinski, J. T., Schmitt, A., Forni, F., & Bachmann, O. (2016). U‐Th zircon dating by laser ablation single collector inductively coupled plasma‐mass spectrometry (LA‐ICP‐MS). Geostandards and Geoanalytical Research, 40(3), 377-387.\\
 Keller, C. B., Schoene, B., & Samperton, K. M. (2018). A stochastic sampling approach to zircon eruption age interpretation. Geochemical Perspectives Letters (Online), 8(LLNL-JRNL-738859).
 
 ## Acknowledgments
