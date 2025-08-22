@@ -31,19 +31,20 @@ This repository contains Python tools and workflows for processing and analyzing
 ## Features
 
 ### Bayesian Eruption Estimate
-- **MCMC Simulation**: Markov Chain Monte Carlo methods for eruption age estimation.
-- **Uncertainty Quantification**: Comprehensive error propagation and uncertainty analysis.
+- **Bayesian eruption estimation function**: Methods for eruption age estimation following Keller et al. (2018).
+- **Prior distributions**: Many different prior distribution can be applied.
 - **Visualization Tools**: Plotting functions for results interpretation.
 
 ### Iolite Integration
-- **Custom Data Reduction Schemes**: Specialized workflows for young zircon U-Pb dating.
-- **U-Th Dating Support**: Dedicated reduction scheme for U-Th geochronology.
-- **Quality Control Tools**: Automated label filling to avoid empty label names.
+- **Custom Data Reduction Schemes**: Specialized workflows for data processing of young zircon.
+- **U-Th Dating**: Dedicated reduction scheme for U-Th geochronology following the method by Guillong et al. (2016).
+- **U-Pb Dating**: Dedicated reduction scheme for young zircon U-Pb geochronology.
+- **Quality Control Tools**: Independently usable automated label filling scheme to avoid empty label names.
 
 ### Synthetic Data Generation
-- **Flexible Distribution Modeling**: Generate synthetic zircon ages from various statistical distributions.
+- **Flexible Distribution Modeling**: Generate synthetic U-Th zircon ages from various underlying distributions.
 - **Realistic Uncertainty Simulation**: Apply realistic analytical uncertainties to synthetic data.
-- **Visualization**: Displays the synthetic data und uncertainties transparently.
+- **Visualization**: Display the synthetic data und uncertainties transparently.
 
 ## Requirements
 
@@ -81,10 +82,6 @@ pip install numpy pandas scipy matplotlib tqdm jupyter openpyxl
 
 1. **Prepare your data**: Ensure your zircon age data is in the correct format: see `example_data.xlsx` (needed columns: Unit, model_age, model_age_1sigma)
 
-- `example_data.xlsx`: Sample zircon age dataset
-- `example_data_bayesian_results.xlsx`: Detailed analysis results
-- `example_data_bayesian_results_summary.xlsx`: Summary statistics
-
 2. **Run the interactive notebook**: 
 ```bash
 jupyter notebook "Bayesian eruption estimate/Bayesian_input_file.ipynb"
@@ -94,6 +91,11 @@ jupyter notebook "Bayesian eruption estimate/Bayesian_input_file.ipynb"
 ```bash
 python "Bayesian eruption estimate/bayesian_input_file.py"
 ```
+
+Example files include
+- `example_data.xlsx`: Sample zircon age dataset
+- `example_data_bayesian_results.xlsx`: Detailed analysis results of the Bayesian eruption age estimation
+- `example_data_bayesian_results_summary.xlsx`: Summary of the eruption estimation results
 
 ### Iolite Data Reduction
 
@@ -112,37 +114,23 @@ jupyter notebook "Synthetic Data/generating_synthetic_data.ipynb"
 
 ## Contributing
 
-We welcome contributions to improve and expand the UThPb-ZirChron toolkit. Whether you're reporting bugs, suggesting enhancements, or contributing code, your input is valuable to the scientific community.
-
-### How to Contribute
-
-1. **Reporting Issues**: If you encounter bugs or have suggestions for improvements, please open an issue on the GitHub repository with a detailed description.
-
-2. **Feature Requests**: For new features or major changes, please open an issue first to discuss the proposed changes.
-
-3. **Code Contributions**: 
-   - Fork the repository
-   - Create a feature branch
-   - Make your changes with appropriate documentation
-   - Submit a pull request with a clear description of your changes
-
-4. **Documentation**: Improvements to documentation, examples, or tutorials are always appreciated.
-
-### Support
-
-For technical support or questions about the methodology, please contact the authors via email. We aim to respond to inquiries in a timely manner.
+We welcome contributions to improve and expand the UThPb-ZirChron toolkit. Whether you are reporting bugs, suggesting enhancements, or contributing code, your input is valuable. Please do not hesitate to reach out.
 
 ## Citation
 
 If you use this code in your research, please cite:
 
-[Add your publication details here when available]
+[Will be added after submission]
 
 ## Contact
 
 **Author**: Zoe Moser  
 **Institution**: ETH Zurich  
 **Email**: moserz@erdw.ethz.ch
+
+## References
+Guillong, M., Sliwinski, J. T., Schmitt, A., Forni, F., & Bachmann, O. (2016). U‐Th zircon dating by laser ablation single collector inductively coupled plasma‐mass spectrometry (LA‐ICP‐MS). Geostandards and Geoanalytical Research, 40(3), 377-387.
+Keller, C. B., Schoene, B., & Samperton, K. M. (2018). A stochastic sampling approach to zircon eruption age interpretation. Geochemical Perspectives Letters (Online), 8(LLNL-JRNL-738859).
 
 ## Acknowledgments
 
