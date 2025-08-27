@@ -122,6 +122,12 @@ If you use this code in your research, please cite:
 
 [Will be added after submission]
 
+## Data Availability
+
+The datasets used and analyzed in the associated research paper are available in this repository:
+
+- **`supplement_data_file.xlsx`**: Contains LA-ICP-MS data, calculated model age and eruption age estimates
+
 ## Contact
 
 **Author**: Zoe Moser  
